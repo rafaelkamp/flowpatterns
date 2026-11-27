@@ -1,0 +1,25 @@
+# Ambiente auxiliar para execução da FlowPatterns com PostgreSQL.
+# Uso:
+#   docker compose up -d
+#   SPRING_PROFILES_ACTIVE=postgres ./mvnw spring-boot:run
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: flowpatterns-db
+    environment:
+      POSTGRES_DB: flowpatterns
+      POSTGRES_USER: flowpatterns
+      POSTGRES_PASSWORD: flowpatterns
+    ports:
+      - "5432:5432"
+    volumes:
+      - flowpatterns-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U flowpatterns -d flowpatterns"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  flowpatterns-db-data:

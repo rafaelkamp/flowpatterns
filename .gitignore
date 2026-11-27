@@ -1,0 +1,43 @@
+# Build
+target/
+build/
+out/
+*.class
+*.jar
+*.war
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+.factorypath
+.vscode/
+*.code-workspace
+
+# Logs e temporários
+*.log
+logs/
+tmp/
+temp/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Banco de dados local
+*.db
+*.mv.db
+*.trace.db
+data/
+
+# Segredos e ambiente
+.env
+.env.local
+*.pem
+*.key

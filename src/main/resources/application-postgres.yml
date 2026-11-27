@@ -1,0 +1,23 @@
+# Perfil de produção com PostgreSQL.
+# Ative com: SPRING_PROFILES_ACTIVE=postgres
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/flowpatterns}
+    username: ${DB_USER:flowpatterns}
+    password: ${DB_PASSWORD:flowpatterns}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  h2:
+    console:
+      enabled: false
+
+flowpatterns:
+  seed:
+    enabled: ${SEED_ENABLED:false}
+
+logging:
+  level:
+    com.rafaelkamp.flowpatterns: INFO
