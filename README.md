@@ -199,6 +199,10 @@ A aplicação sobe em `http://localhost:8080`.
 A suíte cobre testes unitários dos padrões, dos serviços e dos controllers, além de
 testes de integração do fluxo completo com persistência real (H2).
 
+O pipeline de CI (`.github/workflows/ci.yml`) executa `./mvnw -B verify` em Ubuntu com
+JDK 17 a cada push ou pull request na branch `main`, publicando os relatórios do
+Surefire como artefato.
+
 | Classe de teste | Escopo |
 |---|---|
 | `SolicitacaoFactoryTest` | Factory Method e Builder |
@@ -380,6 +384,7 @@ Maven Wrapper 3.8.2 sobre JDK 21 com compilação `--release 17`; runtime Java 1
 | Documentação Swagger | ✅ `GET /v3/api-docs` (25 KB) e `GET /swagger-ui/index.html` → 200 |
 | Tratamento de erros | ✅ 400 (validação), 403 (aprovação indevida), 404 (inexistente), 409 (duplicidade/e-mail), 422 (regra de negócio) |
 | Log da aplicação | ✅ sem ERROR/WARN durante toda a validação |
+| CI (GitHub Actions) | ✅ workflow `CI` concluído com sucesso em Ubuntu/JDK 17 (`./mvnw -B verify`, 71 testes) |
 | PostgreSQL / Docker | ⚠️ **não executado** — o Docker não está disponível neste ambiente; o profile `postgres` e o `docker-compose.yml` foram fornecidos, mas o teste real com PostgreSQL permanece pendente |
 
 ## 16. Sugestões de evolução futura
