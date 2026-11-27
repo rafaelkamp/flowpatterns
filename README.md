@@ -4,6 +4,7 @@
 [![Spring Boot 3.3](https://img.shields.io/badge/Spring%20Boot-3.3.5-6DB33F?logo=spring&logoColor=white)](https://spring.io/projects/spring-boot)
 [![Maven](https://img.shields.io/badge/Maven-3.8%2B-C71A36?logo=apache-maven&logoColor=white)](https://maven.apache.org/)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/rafaelkamp/flowpatterns/actions/workflows/ci.yml/badge.svg)](https://github.com/rafaelkamp/flowpatterns/actions/workflows/ci.yml)
 
 ---
 
@@ -103,7 +104,7 @@ A explicação completa, com diagramas Mermaid, está em
 ## 7. Instalação
 
 ```bash
-# clonar (após publicar o repositório)
+# clonar
 git clone https://github.com/rafaelkamp/flowpatterns.git
 cd flowpatterns
 

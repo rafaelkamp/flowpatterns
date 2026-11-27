@@ -16,6 +16,29 @@
     <version>1.0.0</version>
     <name>FlowPatterns</name>
     <description>Plataforma inteligente de gerenciamento de solicitações e aprovações</description>
+    <url>https://github.com/rafaelkamp/flowpatterns</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>rafaelkamp</id>
+            <name>Rafael Kamp</name>
+            <url>https://github.com/rafaelkamp</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://github.com/rafaelkamp/flowpatterns.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/rafaelkamp/flowpatterns.git</developerConnection>
+        <url>https://github.com/rafaelkamp/flowpatterns</url>
+    </scm>
 
     <properties>
         <java.version>17</java.version>
