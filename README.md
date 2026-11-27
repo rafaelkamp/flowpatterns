@@ -156,6 +156,11 @@ As credenciais são lidas de variáveis de ambiente (veja [`.env.example`](.env.
 | `SEED_ENABLED` | `false` | Carga de dados de demonstração |
 
 > Nenhuma credencial real está versionada no repositório.
+>
+> **Limite da validação local:** o Docker não estava disponível neste ambiente;
+> portanto, o profile `postgres` e o `docker-compose.yml` não foram executados
+> contra um PostgreSQL real. A configuração foi fornecida, mas essa validação
+> permanece pendente.
 
 ### 8.3 Parâmetros de negócio externalizados
 
@@ -439,9 +444,8 @@ Maven Wrapper 3.8.2 sobre JDK 21 com compilação `--release 17`; runtime Java 1
 | Tratamento de erros | ✅ 400 (validação), 403 (aprovação indevida), 404 (inexistente), 409 (duplicidade/e-mail), 422 (regra de negócio) |
 | Log da aplicação | ✅ sem ERROR/WARN durante toda a validação |
 | CI (GitHub Actions) | ✅ workflow `CI` concluído com sucesso em Ubuntu/JDK 17 (`./mvnw -B verify`, 71 testes) |
-| PostgreSQL / Docker | ⚠️ **não executado** — o Docker não está disponível neste ambiente; o profile `postgres` e o `docker-compose.yml` foram fornecidos, mas o teste real com PostgreSQL permanece pendente |
 
-## 17. Sugestões de evolução futura
+## 17. Funcionalidades futuras
 
 1. **Autenticação e autorização** — Spring Security com JWT, substituição do campo
    `atorId` pelo usuário autenticado e regras por papel/política;
