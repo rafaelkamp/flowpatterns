@@ -443,7 +443,7 @@ Maven Wrapper 3.8.2 sobre JDK 21 com compilação `--release 17`; runtime Java 1
 | Documentação Swagger | ✅ `GET /v3/api-docs` (25 KB) e `GET /swagger-ui/index.html` → 200 |
 | Tratamento de erros | ✅ 400 (validação), 403 (aprovação indevida), 404 (inexistente), 409 (duplicidade/e-mail), 422 (regra de negócio) |
 | Log da aplicação | ✅ sem ERROR/WARN durante toda a validação |
-| CI (GitHub Actions) | ✅ workflow `CI` concluído com sucesso em Ubuntu/JDK 17 (`./mvnw -B verify`, 71 testes) |
+| CI (GitHub Actions) | ✅ workflow `CI` concluído com sucesso em Ubuntu/JDK 17 (`./mvnw -B verify`, 73 testes) |
 
 ## 17. Funcionalidades futuras
 
