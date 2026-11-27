@@ -17,8 +17,10 @@ até duas etapas (gestor → diretor).
 
 A interface é servida diretamente pelo Spring Boot em `http://localhost:8080`,
 consome a API em `/api/v1` e não exige Node.js, build frontend ou configuração de
-CORS. O projeto é o trabalho final do curso **Java | Design Patterns**: cada decisão de
-arquitetura foi tomada para resolver um problema real do domínio, e cada padrão GoF
+CORS. O projeto é o trabalho final do curso
+**BOOTCAMP Itaú — Java com Inteligência Artificial | Java | Design Patterns**:
+cada decisão de arquitetura foi tomada para resolver um problema real do domínio,
+e cada padrão GoF
 aplicado tem justificativa técnica documentada. Não há padrões "decorativos": todos
 possuem código de produção exercitados por testes automatizados.
 
