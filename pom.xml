@@ -13,7 +13,7 @@
 
     <groupId>com.rafaelkamp</groupId>
     <artifactId>flowpatterns</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <name>FlowPatterns</name>
     <description>Plataforma inteligente de gerenciamento de solicitações e aprovações</description>
     <url>https://github.com/rafaelkamp/flowpatterns</url>
